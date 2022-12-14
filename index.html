@@ -38,7 +38,7 @@
       </section>
       <section id="projects">
         <h4>These are some of my projects</h4>
-        <div id="project-grid">
+        <div class="project-grid">
           <div class="project-tile">
             <a
               href="https://juliana-zh.github.io/cirriculum_magazine_grid/"
@@ -46,7 +46,9 @@
             >
               <img
                 src="./images/cirriculum_magazine_grid.png"
-                alt="one_article_on_dark_background_about_freecodecamp"
+                data-src="./images/cirriculum_magazine_grid-orig.png"
+                alt="magazine_about_freecodecamp"
+                class="lazy-load"
               />
               <p class="project-info">
                 <span class="code"><</span>FreeCodeCamp cirriculum<span
@@ -61,7 +63,12 @@
               href="https://juliana-zh.github.io/cats_gallery/"
               target="_blank"
             >
-              <img src="./images/cat_gallery.png" alt="grid_of_nice_cats" />
+              <img
+                src="./images/cat_gallery.png"
+                data-src="./images/cat_gallery-orig.jpeg"
+                alt="grid_of_nice_cats"
+                class="lazy-load"
+              />
               <p class="project-info">
                 <span class="code"><</span>Cat photo gallery<span class="code"
                   >/></span
@@ -76,7 +83,9 @@
             >
               <img
                 src="./images/tribute_page.png"
+                data-src="./images/tribute_page-orig.png"
                 alt="a page about Dr. Norman Borlaug"
+                class="lazy-load"
               />
               <p class="project-info">
                 <span class="code"><</span>Tribute Page<span class="code"
@@ -93,6 +102,8 @@
               <img
                 src="./images/trombones.png"
                 alt="a page with site about trombones company"
+                class="lazy-load"
+                data-src="./images/trombones-orig.png"
               />
               <p class="project-info">
                 <span class="code"><</span>Trombones Page<span class="code"
@@ -105,7 +116,9 @@
             <a href="https://juliana-zh.github.io/camper_cafe/" target="_blank">
               <img
                 src="./images/camper_cafe.png"
+                data-src="./images/camper_cafe-orig.png"
                 alt="a page about prices in camper cafe"
+                class="lazy-load"
               />
               <p class="project-info">
                 <span class="code"><</span>Camper Cafe<span class="code"
@@ -120,7 +133,12 @@
               href="https://juliana-zh.github.io/tech_doc_page/"
               target="_blank"
             >
-              <img src="./images/doc_page.png" alt="documentation page of JS" />
+              <img
+                src="./images/doc_page.png"
+                data-src="./images/doc_page-orig.png"
+                alt="documentation page of JS"
+                class="lazy-load"
+              />
               <p class="project-info">
                 <span class="code"><</span>Documentation Page<span class="code"
                   >/></span
@@ -162,5 +180,6 @@
         ></a>
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

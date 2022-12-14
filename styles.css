@@ -118,7 +118,7 @@ body {
   max-width: 630px;
 }
 
-#project-grid {
+.project-grid {
   display: grid;
   gap: 40px;
   margin: 0 auto;
@@ -137,7 +137,7 @@ body {
   height: 100%; /*!!!*/
 }
 
-#project-grid a {
+.project-grid a {
   display: block;
   width: 100%;
   height: 100%;
@@ -148,7 +148,7 @@ body {
   justify-content: space-evenly;
 }
 
-#project-grid img {
+.project-grid img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1 / 1;
@@ -281,8 +281,25 @@ body {
   color: inherit;
 }
 
+.lazy-load {
+  filter: blur(10px);
+}
+
+@media (min-width: 1230px) {
+  .grid-wide {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-top: 60px;
+  }
+
+  #projects {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media (max-width: 1070px) {
-  #project-grid {
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -292,7 +309,7 @@ body {
 }
 
 @media (max-width: 720px) {
-  #project-grid {
+  .project-grid {
     grid-template-columns: 1fr;
     width: 100%;
   }
